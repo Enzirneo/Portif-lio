@@ -103,7 +103,7 @@ body.dark-mode .hero {
   background: linear-gradient(
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.4)
-  ), url('fundopreto.png') center/cover no-repeat;
+  ), url('Imagens/fundopreto.png') center/cover no-repeat;
 }
 
 body.dark-mode .nav-container {
@@ -246,7 +246,7 @@ body.dark-mode .footer-social a:hover {
   width: 95%;
   height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.212)),
-    url('fundobranco.jpg') center/cover no-repeat;
+    url('Imagens/fundobranco.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
