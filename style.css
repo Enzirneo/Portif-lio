@@ -72,9 +72,6 @@ nav ul li a:active {
   background: none;
 }
 
-body.dark-mode .nav-container {
-  background: rgba(255, 255, 255, 0.1);
-}
 body.dark-mode .nome {
   background: linear-gradient(to left, #797878, #eeeeee); /* degrade escuro */
   -webkit-background-clip: text;
@@ -255,14 +252,6 @@ body.dark-mode .footer-social a:hover {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-}
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
 }
 
 .hero-text p:first-of-type {
@@ -549,19 +538,6 @@ body.dark-mode .download-btn {
   font-family: 'Montserrat', sans-serif;
   color: #2c2c2c;
   margin-bottom: 5px;
-}
-
-body.dark-mode .skills-section,
-body.dark-mode .projects-section,
-body.dark-mode .contact-section {
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
-body.dark-mode .skills-section p,
-body.dark-mode .projects-section p,
-body.dark-mode .contact-section p {
-  color: #f0f0f0;
 }
 
 /*======================
