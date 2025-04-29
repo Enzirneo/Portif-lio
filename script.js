@@ -167,3 +167,39 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+// Animações utilizando GSAP
+
+gsap.from(".hero-text p, .hero-text h1, .hero-text .subtext, .buttons, .social-icons", {
+  opacity: 0,
+  y: 30,
+  stagger: 0.2,
+  duration: 1.2,
+  ease: "power2.out"
+});
+
+gsap.from(".profile-image", {
+  scale: 0.8,
+  opacity: 0,
+  duration: 1,
+  delay: 1,
+  ease: "back.out(1.7)"
+});
+
+document.querySelectorAll(".project-card, .skills-grid").forEach(card => {
+  card.addEventListener("mouseenter", () => {
+    gsap.to(card, { scale: 1.05, boxShadow: "0 10px 20px rgba(0,0,0,0.2)", duration: 0.3 });
+  });
+  card.addEventListener("mouseleave", () => {
+    gsap.to(card, { scale: 1, boxShadow: "none", duration: 0.3 });
+  });
+});
+
+gsap.from(".contact-form input, .contact-form textarea, .submit-btn", {
+  scrollTrigger: ".contact-form",
+  opacity: 0,
+  y: 20,
+  stagger: 0.2,
+  duration: 0.8,
+  ease: "power2.out"
+});

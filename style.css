@@ -511,8 +511,7 @@ body.dark-mode .download-btn {
 .skills-section,
 .projects-section,
 .contact-section {
-  padding: 60px 40px;
-  background-color: #d1d1d1;
+  padding: 60px 10px;
   text-align: center;
 }
 
@@ -546,9 +545,9 @@ body.dark-mode .download-btn {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  grid-template-columns: repeat(3, 1fr); /* antes: 4 */
+  gap: 40px;
   justify-content: center;
-  gap: 0.5rem;
   flex-wrap: wrap;
   padding: 0 40px;
   max-width: 1200px;
