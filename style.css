@@ -18,6 +18,7 @@ body.dark-mode {
   background-color: #121212;
   color: #f0f0f0;
 }
+
 /*======================
   NAVIGATION
 ======================*/
@@ -73,7 +74,7 @@ nav ul li a:active {
 }
 
 body.dark-mode .nome {
-  background: linear-gradient(to left, #797878, #eeeeee); /* degrade escuro */
+  background: linear-gradient(to left, #797878, #eeeeee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -128,7 +129,7 @@ body.dark-mode .hero-text p:first-of-type {
 }
 
 body.dark-mode .hero-text h1 {
-  background: linear-gradient(to left, #616060, #eeeeee); /* degrade escuro */
+  background: linear-gradient(to left, #616060, #eeeeee);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -143,8 +144,8 @@ body.dark-mode .btn.secondary {
   color: #f0f0f0;
 }
 body.dark-mode .btn.secondary:hover {
-  background-color: #444; /* ou outro tom mais claro que o fundo atual */
-  color: #fff; /* garante boa legibilidade */
+  background-color: #444;
+  color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease;
   transform: translateY(-3px);
 }
@@ -154,8 +155,8 @@ body.dark-mode .download-btn {
   color: #f0f0f0;
 }
 body.dark-mode .download-btn:hover {
-  background-color: #444; /* ou outro tom mais claro que o fundo atual */
-  color: #fff; /* garante boa legibilidade */
+  background-color: #444;
+  color: #fff;
   transition: background-color 0.3s ease, color 0.3s ease;
   transform: translateY(-3px);
 }
@@ -248,7 +249,7 @@ body.dark-mode .footer-social a:hover {
   flex-direction: column;
   justify-content: flex-start;
   padding: 30px;
-  margin: 60px auto 50px auto; /* Alterando o valor da margem superior (100px) */
+  margin: 60px auto 50px auto;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -258,7 +259,7 @@ body.dark-mode .footer-social a:hover {
   font-size: 20px;
   color: #444;
   margin-bottom: 8px;
-  order: -1; /* Garante que fique acima do h1 */
+  order: -1;
   margin-left: 50px;
 }
 
@@ -306,7 +307,7 @@ body.dark-mode .footer-social a:hover {
 }
 
 .lang-toggle:hover {
-  background-color: #eeeeee;
+  background-color: rgba(255, 255, 255, 0.4);
   color: #000000;
 }
 
@@ -342,22 +343,21 @@ body.dark-mode .footer-social a:hover {
 
 .social-icons {
   margin-left: 50px;
-  display: flex; /* Garante que os ícones fiquem alinhados horizontalmente */
-  gap: 40px; /* Adiciona espaço entre os ícones */
+  display: flex;
+  gap: 40px;
 }
 
 .social-icons a {
-  color: inherit; /* Herda a cor do elemento pai */
-  text-decoration: none; /* Remove o sublinhado do link */
+  color: inherit;
+  text-decoration: none;
 }
 
 .social-icons i {
   font-size: 30px;
-  color: #242424 !important; /* Cor preta */
+  color: #242424 !important;
   cursor: pointer;
 }
 
-/* Para remover o espaçamento extra no último ícone */
 .social-icons i:last-child {
   margin-right: 0;
 }
@@ -367,7 +367,7 @@ body.dark-mode .footer-social a:hover {
 }
 
 .profile-image {
-  width: 360px; /* Tamanho aumentado */
+  width: 360px;
   height: 360px;
   object-fit: cover;
   border-radius: 50%;
@@ -381,10 +381,9 @@ body.dark-mode .footer-social a:hover {
   top: 15px;
   left: 50px;
   z-index: 1000;
-  background: linear-gradient(to left, #636363, #161616); /* degrade da direita pra esquerda */
+  background: linear-gradient(to left, #636363, #161616);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* Para alguns navegadores que ainda precisam disso */
   background-clip: text;
   color: transparent;
 }
@@ -463,7 +462,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: row; /* Aqui sim lado a lado */
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
@@ -545,7 +544,7 @@ body.dark-mode .download-btn {
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* antes: 4 */
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
@@ -570,7 +569,7 @@ body.dark-mode .download-btn {
   text-align: left;
   font-size: 24px;
   width: 100%;
-  padding-left: 0px; /* ajusta esse valor se quiser mais/menos recuo */
+  padding-left: 0px;
   margin-bottom: 20px;
 }
 
@@ -595,74 +594,74 @@ body.dark-mode .download-btn {
   transform: scale(1.05);
 }
 
-/* Hover Personalizados */
-#Front:nth-child(1):hover {
+.front:nth-child(1):hover {
   background: linear-gradient(135deg, #b84516 20%, #df6d41 100%);
   color: #ffffff;
 }
-#Front:nth-child(2):hover {
+.front:nth-child(2):hover {
   background: linear-gradient(135deg, #0e658f 20%, #2b96cc 100%);
   color: #ffffff;
 }
-#Front:nth-child(3):hover {
+.front:nth-child(3):hover {
   background: linear-gradient(135deg, #bb8300 20%, #f3be42 100%);
   color: #ffffff;
 }
-#Front:nth-child(4):hover {
+.front:nth-child(4):hover {
   background: linear-gradient(135deg,
-  #ff3b00 0%,
-  #f36c42 20%,
-  #ae4dff 40%,
-  #00beff 60%,
-  #00d47b 80%);
+    #ff3b00 0%,
+    #f36c42 20%,
+    #ae4dff 40%,
+    #00beff 60%,
+    #00d47b 80%);
   color: #ffffff;
 }
-#Front:nth-child(5):hover {
+.front:nth-child(5):hover {
   background-color: #3858e9;
   color: #ffffff;
 }
 
-#Back:nth-child(1):hover {
+.back:nth-child(1):hover {
   background-color: #439b36;
   color: #ffffff;
 }
-#Back:nth-child(2):hover {
+.back:nth-child(2):hover {
   background: linear-gradient(135deg, #2b5b84 20%, #ffd343 100%);
   color: #ffffff;
 }
-#Back:nth-child(3):hover {
+.back:nth-child(3):hover {
   background: linear-gradient(135deg, #04536f 20%, #e67d27 100%);
   color: #ffffff;
 }
-#Back:nth-child(4):hover {
+.back:nth-child(4):hover {
   background: linear-gradient(135deg, #f59620 20%, #0074a3 100%);
   color: #ffffff;
 }
-#Back:nth-child(5):hover {
+.back:nth-child(5):hover {
   background-color: #4183c4;
   color: #ffffff;
 }
 
-#DevOps:nth-child(1):hover {
+.devops:nth-child(1):hover {
   background-color: #ff5722;
   color: #ffffff;
 }
-#DevOps:nth-child(2):hover {
+.devops:nth-child(2):hover {
   background: linear-gradient(135deg,
-  #ff6600 10%,
-  #8bc34a 45%,
-  #2196f3 70%,
-  #ffc107 90%);
+    #ff6600 10%,
+    #8bc34a 45%,
+    #2196f3 70%,
+    #ffc107 90%);
   color: #ffffff;
 }
-#DevOps:nth-child(3):hover {
+.devops:nth-child(3):hover {
   background-color: #494848;
   color: #ffffff;
 }
-#DevOps:nth-child(4):hover {
+.devops:nth-child(4):hover {
   background: linear-gradient(135deg, #f5bc20 15%, #232424 80%);
   color: #ffffff;
 }
+
 
 /*======================
   PROJECTS GRID
@@ -670,8 +669,8 @@ body.dark-mode .download-btn {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* antes: 4 */
-  gap: 40px; /* aumenta o espaçamento entre os cards */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
@@ -688,18 +687,18 @@ body.dark-mode .download-btn {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: scale(1.05); /* Zoom in */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Aumenta a sombra no hover */
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .project-card img {
   width: 100%;
-  max-width: 360px; /* maior que os 200px anteriores */
-  height: 180px; /* um pouco mais alta */
+  max-width: 360px;
+  height: 180px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -717,8 +716,8 @@ body.dark-mode .download-btn {
   padding: 0 10px;
 }
 .project-card a {
-  margin-top: auto; /* empurra o botão pro fim do card */
-  align-self: center; /* opcional: alinha à esquerda */
+  margin-top: auto;
+  align-self: center;
   padding: 10px 20px;
   background-color: #2C2C2C;
   color: white;
@@ -738,7 +737,7 @@ body.dark-mode .project-card a:hover {
 }
 
 .project-card a:hover {
-  background-color: #afafaf; /* tom mais escuro no hover */
+  background-color: #afafaf;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 

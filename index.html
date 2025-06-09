@@ -15,7 +15,6 @@
 <body>
 
   <section class="hero">
-    <!-- TOPO FIXO -->
     <div class="header-content" id="sobre">
       <h1 class="nome">Enzo Villela Bispo</h1>
       <div class="top-buttons">
@@ -40,7 +39,6 @@
       </div>
     </div>
   
-    <!-- CONTEÚDO PRINCIPAL HERO -->
     <div class="blur-box">
       <div class="hero-text">
         <p data-key="hero-ola">Olá, eu sou</p>
@@ -68,7 +66,6 @@
         </div>
       </div>
   
-      <!-- IMAGEM À DIREITA -->
       <div class="profile-container">
         <img src="Imagens/foto_solo.jpg" alt="Foto de perfil" class="profile-image" />
       </div>
@@ -87,35 +84,36 @@
           que utilizo para criar soluções robustas e escaláveis.
         </p>
         <div class="skills-container">
-            <div class="skills-grid">
-                <h3>Frontend</h3>
-                <div class="habili">
-                    <div class="skill-box" id="Front">HTML</div>
-                    <div class="skill-box" id="Front">CSS</div>
-                    <div class="skill-box" id="Front">JavaScript</div>
-                    <div class="skill-box" id="Front">Figma</div>
-                    <div class="skill-box" id="Front">WordPress</div>
-                </div>
+          <div class="skills-grid">
+            <h3>Frontend</h3>
+            <div class="habili">
+              <div class="skill-box front">HTML</div>
+              <div class="skill-box front">CSS</div>
+              <div class="skill-box front">JavaScript</div>
+              <div class="skill-box front">Figma</div>
+              <div class="skill-box front">WordPress</div>
             </div>
-            <div class="skills-grid">
-                <h3>Backend</h3>
-                <div class="habili">
-                    <div class="skill-box" id="Back">Node.js</div>
-                    <div class="skill-box" id="Back">Python</div>
-                    <div class="skill-box" id="Back">Java</div>
-                    <div class="skill-box" id="Back">MySQL</div>
-                    <div class="skill-box" id="Back">C++</div>
-                </div>
+          </div>
+          <div class="skills-grid">
+            <h3>Backend</h3>
+            <div class="habili">
+              <div class="skill-box back">Node.js</div>
+              <div class="skill-box back">Python</div>
+              <div class="skill-box back">Java</div>
+              <div class="skill-box back">MySQL</div>
+              <div class="skill-box back">C++</div>
             </div>
-            <div class="skills-grid">
-                <h3>Tools & DevOps</h3>
-                <div class="habili">
-                    <div class="skill-box" id="DevOps">Git</div>
-                    <div class="skill-box" id="DevOps">Windows</div>
-                    <div class="skill-box" id="DevOps">Prompt Engineer</div>
-                    <div class="skill-box" id="DevOps">Linux</div>
-                </div>
+          </div>
+          <div class="skills-grid">
+            <h3>Tools & DevOps</h3>
+            <div class="habili">
+              <div class="skill-box devops">Git</div>
+              <div class="skill-box devops">Windows</div>
+              <div class="skill-box devops">Prompt Engineer</div>
+              <div class="skill-box devops">Linux</div>
             </div>
+          </div>
+        </div>
         </div>
       </div>
       </div>  
@@ -149,9 +147,8 @@
           <div class="project-card">
             <img src="Imagens/Galeria.png" alt="Projeto Galeria">
             <h4>Galeria de Fotos</h4>
-            <p data-key="proj3-descricao">Um site desenvolvido em Reacte VIte, utilizando API do Pexels, tema claro/escuro,
-               barra de pesquisa funcional e componentes reutilizáveis. O site destaca projetos e habilidades com foco em
-                organização visual, usabilidade e boas práticas de desenvolvimento.</p>
+            <p data-key="proj3-descricao">Um site desenvolvido em Reacte e Vite, utilizando API do Pexels, tema claro/escuro,
+               barra de pesquisa funcional e componentes reutilizáveis.</p>
             <a href="https://galeria-de-fotos-rosy-iota.vercel.app/" target="_blank" data-key="proj3-link">Ver Projeto</a>
           </div>
         </div>
@@ -200,7 +197,6 @@
                     </div>
                     <input type="text" name="subject" placeholder="Assunto da mensagem" required>
                     <textarea name="message" placeholder="Sua mensagem" required></textarea>
-                    <!-- Campo escondido para a data -->
                     <input type="hidden" name="time" id="time">
                     <button type="submit" class="submit-btn">Enviar Mensagem</button>
                   </form>
